@@ -1,0 +1,42 @@
+name: Spike / Research
+description: Time-boxed research, exploration, or learning task.
+title: "[Spike]: "
+labels: ["spike"]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        ⚡ Use this template when you're researching, learning, or experimenting.  
+        The goal is to answer a question or learn just enough to unblock a feature.
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What do you want to learn, research, or prove?
+      placeholder: "E.g., Learn React basics enough to build a TransactionsList component."
+  - type: textarea
+    id: questions
+    attributes:
+      label: Key Questions
+      description: What are you trying to find out?
+      value: "- "
+  - type: textarea
+    id: resources
+    attributes:
+      label: Resources / Links
+      description: Tutorials, docs, or references to use.
+      value: "- "
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected Outcome
+      description: What will 'done' look like for this spike?
+      value: "- [ ] Clear notes / checklist\n- [ ] Small demo or prototype (if needed)\n- [ ] Notes saved in README or /notes folder"
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - priority:high
+        - priority:medium
+        - priority:low
