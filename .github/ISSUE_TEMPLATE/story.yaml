@@ -1,0 +1,53 @@
+name: Story / Task
+description: Single piece of work with clear acceptance criteria and DoD.
+title: "[Story]: "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: "Fill only what applies. Keep Issues 1–3 hours when possible."
+  - type: input
+    id: goal
+    attributes:
+      label: Story
+      description: "As a [user/dev], I want [goal] so that [reason]."
+      placeholder: "As a user, I want to sign up so I can save my data."
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria (testable checklist)
+      description: "What must be true for this to be done?"
+      value: "- [ ] \n- [ ] \n- [ ] "
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - frontend
+        - backend
+        - devops
+        - testing
+        - security
+        - docs
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - priority:high
+        - priority:medium
+        - priority:low
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Links
+      description: "Context, approach, design decisions."
+  - type: checkboxes
+    id: dod
+    attributes:
+      label: Definition of Done
+      options:
+        - label: Code complete
+        - label: Tests added/updated and passing
+        - label: Lint/build pass in CI
+        - label: Docs/README updated if needed
